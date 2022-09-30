@@ -43,3 +43,17 @@ button:hover {
     box-shadow: 0 2px 3px 0 hsl(0 0% 0% / 0.1);
 
 }
+
+.home-img {
+    display: flex;
+    width: 30rem;
+    height: 25rem;
+    border-radius: 16px;
+}
+
+.catalog {
+    display: flex;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 16px;
+}
