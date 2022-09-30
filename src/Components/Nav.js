@@ -6,6 +6,11 @@ function Nav() {
         <Wrapper>
             <h1>Components</h1>
             <List>
+                <li>
+                    Home
+                </li>
+            </List>
+            <List>
                 <li>Shop</li>
             </List>
             <List>
