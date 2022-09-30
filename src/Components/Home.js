@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import computer from '/home/rc/repos/shopping-cart/src/lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg'
+import Computer from '../Images/Computer.jpg'
 
 function Home() {
     return (
@@ -16,9 +16,7 @@ function Home() {
                     Shop Now
                 </button>
             </section>
-            <Img>
-                <img src={computer} alt='something beautiful' />
-            </Img>
+                <img className='home-img' src={Computer} alt='Computer Aesthetic' />
         </Wrapper>
     )
 }
@@ -37,9 +35,3 @@ background: #9E9EE9;
 background: -webkit-radial-gradient(bottom right, #9E9EE9, #FFFFFF);
 background: -moz-radial-gradient(bottom right, #9E9EE9, #FFFFFF);
 background: radial-gradient(to top left, #9E9EE9, #FFFFFF);`
-
-const Img = styled.div`
-display: flex;
-width: 350px;
-height: 350px;
-border-radius: 16px;`

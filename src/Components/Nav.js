@@ -1,18 +1,27 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 function Nav() {
+    const navStyle = {
+        color: 'white',
+        textDecoration:'none'
+    }
     return (
         <Wrapper>
             <h1>Components</h1>
-            <List>
-                <li>
-                    Home
-                </li>
-            </List>
-            <List>
-                <li>Shop</li>
-            </List>
+            <Link style={navStyle} to='/'>
+                <List>
+                    <li>
+                        Home
+                    </li>
+                </List>
+            </Link>
+            <Link style={navStyle} to='catalog'>
+                <List>
+                    <li>Shop</li>
+                </List>
+            </Link>
             <List>
                 <li>Check Out</li>
             </List>
