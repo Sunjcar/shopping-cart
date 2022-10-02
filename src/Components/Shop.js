@@ -1,39 +1,23 @@
 import React from 'react'
 import styled from 'styled-components'
-import Erbology from '../Images/Erbology.jpg'
-import Shoes from '../Images/PumaShoes.jpg'
-import Watch from '../Images/Watch.jpg'
-import Tea from '../Images/Tea.jpg'
-import Camera from '../Images/Camera.jpg'
-import Glasses from '../Images/Sunglasses.jpg'
 
-function Shop() {
+function Shop({ productItems }) {
   return (
     <Wrapper>
-      <Card>
-        <img src={Erbology} alt='Self-Care Product' className='catalog' />
-        <p>Erbology 3 Set Self-Care Package</p>
-      </Card>
-      <Card>
-        <img src={Shoes} alt='Puma Shoes' className='catalog' />
-        <p> All Star Puma Black/White Sneakers</p>
-      </Card>
-      <Card>
-        <img src={Watch} alt='White Watch' className='catalog' />
-        <p> Slick Wrist Watch</p>
-      </Card>
-      <Card>
-        <img src={Tea} alt='Japanese Tea' className='catalog' />
-        <p> Fine Japanese Tea</p>
-      </Card>
-      <Card>
-        <img src={Camera} alt='Camera' className='catalog' />
-        <p> Black Olympus Pen Camera</p>
-      </Card>
-      <Card>
-        <img src={Glasses} alt='Sunglasses' className='catalog'/>
-        <p>Black Rayban Sunglasses</p>
-      </Card>
+      {productItems.map((productItem) => (
+        <Card>
+          <img
+            className='catalog'
+            src={productItem.image}
+            alt={productItem.name}
+          />
+          <p>{productItem.name}</p>
+          <div className='price'>
+            <p>${productItem.price}</p>
+            <button> Add To Cart </button>
+          </div>
+        </Card>
+      ))}
     </Wrapper>
   )
 }
