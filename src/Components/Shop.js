@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 
-function Shop({ productItems }) {
+function Shop({ productItems, handleAddProduct }) {
   return (
     <Wrapper>
       {productItems.map((productItem) => (
-        <Card>
+        <Card key={productItem.id}>
           <img
             className='catalog'
             src={productItem.image}
@@ -14,7 +14,7 @@ function Shop({ productItems }) {
           <p>{productItem.name}</p>
           <div className='price'>
             <p>${productItem.price}</p>
-            <button> Add To Cart </button>
+            <button onClick={() => handleAddProduct(productItem)}> Add To Cart </button>
           </div>
         </Card>
       ))}
