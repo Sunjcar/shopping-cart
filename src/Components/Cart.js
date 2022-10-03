@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
+import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai"
 
-const Cart = ({ cart }) => {
+const Cart = ({ cart, handleAddProduct, handleRemoveProduct }) => {
 
     const totalPrice = cart.reduce((price, item) => price + item.quantity * item.price, 0)
 
@@ -26,7 +27,15 @@ const Cart = ({ cart }) => {
                                 />
                                 <p>{item.name}</p>
                             </Wrap>
-                            <p>{item.quantity}</p>
+                            <Quantity>
+                                <button className='product-button' onClick={() => handleRemoveProduct(item)}>
+                                    <AiOutlineMinus />
+                                </button>
+                                <p>{item.quantity}</p>
+                                <button className='product-button' onClick={() => handleAddProduct(item)}>
+                                    <AiOutlinePlus />
+                                </button>
+                            </Quantity>
                             <p>${item.price * item.quantity}</p>
                         </div>
                     </Card>
@@ -58,4 +67,10 @@ flex-direction:column;
 align-items:center;
 justify-content:center;
 padding:1rem;
+`
+const Quantity = styled.div`
+display:flex;
+gap:1rem;
+width:6vw;
+justify-content:center;
 `
