@@ -55,5 +55,82 @@ button:hover {
     display: flex;
     width: 20rem;
     height: 20rem;
-    border-radius: 16px;
+    border-radius: 16px 
+}
+
+.price {
+    display: flex;
+    gap:1rem;
+}
+
+.price button{
+    width:5rem;
+    padding:.15rem;
+    cursor: pointer;
+}
+
+.cart{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    width:100%;
+    padding:1rem;
+}
+
+.cart-items{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 16px 
+}
+
+.check-out{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right:8rem;
+    gap:1rem;
+}
+
+.quantity-container{
+    display:flex;
+}
+
+.product-button{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: .25rem;
+}
+
+.Cart-Icon{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 50px;
+    background-color: white;
+    color:black;
+}
+
+.check-out button {
+    width: 10rem;
+    height: 1.5rem;
+    border-radius: 2rem;
+    background-color: black;
+    color: aliceblue;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.item-price{
+    width:4rem;
 }

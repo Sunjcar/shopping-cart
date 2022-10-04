@@ -36,11 +36,14 @@ const Cart = ({ cart, handleAddProduct, handleRemoveProduct }) => {
                                     <AiOutlinePlus />
                                 </button>
                             </Quantity>
-                            <p>${item.price * item.quantity}</p>
+                            <p className='item-price'>${item.price * item.quantity}</p>
                         </div>
                     </Card>
                 ))}
+                <div className='check-out'>
                 <h3 className='total-price'>Total: ${totalPrice}</h3>
+                <button> Check Out </button>
+                </div>
             </div>
         </div>
     )
@@ -71,6 +74,6 @@ padding:1rem;
 const Quantity = styled.div`
 display:flex;
 gap:1rem;
-width:6vw;
+width:6rem;
 justify-content:center;
 `

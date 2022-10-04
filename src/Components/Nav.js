@@ -1,15 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
+import { BsCartFill } from "react-icons/bs"
 
 function Nav() {
     const navStyle = {
         color: 'white',
-        textDecoration:'none'
+        textDecoration: 'none'
     }
     return (
         <Wrapper>
-            <h1>Components</h1>
+            <h1>Store</h1>
             <Link style={navStyle} to='/'>
                 <List>
                     <li>
@@ -22,9 +23,11 @@ function Nav() {
                     <li>Shop</li>
                 </List>
             </Link>
-            <List>
-                <li>Check Out</li>
-            </List>
+            <Link style={navStyle} to='cart'>
+                <List>
+                    <li className='Cart-Icon'><BsCartFill/></li>
+                </List>
+            </Link>
         </Wrapper>
     )
 }
