@@ -1,8 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 import Computer from '../Images/Computer.jpg'
+import { Link } from 'react-router-dom'
 
 function Home() {
+    const navStyle = {
+        color: 'white',
+        textDecoration:'none'
+    }
     return (
         <Wrapper>
             <section>
@@ -12,9 +17,11 @@ function Home() {
                 <h1>
                     A few clicks is all it takes!
                 </h1>
+                <Link style={navStyle} to='/catalog'>
                 <button>
                     Shop Now
                 </button>
+                </Link>
             </section>
                 <img className='home-img' src={Computer} alt='Computer Aesthetic' />
         </Wrapper>
