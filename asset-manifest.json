@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.aed0116b.css",
+    "main.js": "/shopping-cart/static/js/main.2befba26.js",
+    "static/js/787.d6fe38e8.chunk.js": "/shopping-cart/static/js/787.d6fe38e8.chunk.js",
+    "static/media/Tea.jpg": "/shopping-cart/static/media/Tea.97937976abd969dab42c.jpg",
+    "static/media/Computer.jpg": "/shopping-cart/static/media/Computer.9c43260d8f5cf2b3bb0e.jpg",
+    "static/media/Camera.jpg": "/shopping-cart/static/media/Camera.02107a863d6b089e1418.jpg",
+    "static/media/Erbology.jpg": "/shopping-cart/static/media/Erbology.9f2a27e5bbcdf8c786cb.jpg",
+    "static/media/Sunglasses.jpg": "/shopping-cart/static/media/Sunglasses.e30d749654c42f429c7e.jpg",
+    "static/media/PumaShoes.jpg": "/shopping-cart/static/media/PumaShoes.7ce6efe2244618753b62.jpg",
+    "static/media/Watch.jpg": "/shopping-cart/static/media/Watch.cc18585321e1188c02d8.jpg",
+    "index.html": "/shopping-cart/index.html",
+    "main.aed0116b.css.map": "/shopping-cart/static/css/main.aed0116b.css.map",
+    "main.2befba26.js.map": "/shopping-cart/static/js/main.2befba26.js.map",
+    "787.d6fe38e8.chunk.js.map": "/shopping-cart/static/js/787.d6fe38e8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aed0116b.css",
+    "static/js/main.2befba26.js"
+  ]
+}
