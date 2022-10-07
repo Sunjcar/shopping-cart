@@ -1,40 +1,30 @@
 import React from 'react'
-import styled from 'styled-components'
 
 function Shop({ productItems, handleAddProduct }) {
+
   return (
-    <Wrapper>
+    <div className='flex justify-center items-center 
+    gap-8 p-8 flex-wrap'>
       {productItems.map((productItem) => (
-        <Card key={productItem.id}>
+        <div key={productItem.id} className='flex flex-col gap-4 
+        justify-center items-center'>
           <img
-            className='catalog'
+            className='flex w-80 h-80 rounded-lg'
             src={productItem.image}
             alt={productItem.name}
           />
           <p>{productItem.name}</p>
-          <div className='price'>
-            <p>${productItem.price}</p>
-            <button onClick={() => handleAddProduct(productItem)}> Add To Cart </button>
-          </div>
-        </Card>
+          <p>${productItem.price}</p>
+          <button onClick={() => handleAddProduct(productItem)} 
+          className='bg-[#1da1f2] w-64 rounded-xl text-white
+          hover:-translate-y-1 hover:scale-110'
+          > Add To Cart </button>
+        </div>
       ))}
-    </Wrapper>
+    </div>
   )
 }
 
 export default Shop
 
-const Wrapper = styled.div`
-display:flex;
-justify-content: center;
-align-items: center;
-gap:2rem;
-padding:2rem;
-flex-wrap:wrap;`
 
-const Card = styled.div`
-display:flex;
-flex-direction:column;
-gap:1rem;
-justify-content: center;
-align-items:center;`

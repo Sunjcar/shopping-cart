@@ -1,55 +1,44 @@
 import React from 'react'
-import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { BsCartFill } from "react-icons/bs"
 
-function Nav() {
+function Nav({cart}) {
     const navStyle = {
         color: 'white',
         textDecoration: 'none'
     }
+
     return (
-        <Wrapper>
+        <div className='flex justify-around items-center min-h-10
+         bg-neutral-800 text-white'>
             <h1>Store</h1>
-            <Link style={navStyle} to='/'>
-                <List>
-                    <li>
+            <Link style={navStyle} to='/shopping-cart'>
+                <div>
+                    <li className='flex w-20 justify-around items-center 
+                list-none cursor-pointer
+                hover:-translate-y-1 hover:scale-110'>
                         Home
                     </li>
-                </List>
+                </div>
             </Link>
             <Link style={navStyle} to='catalog'>
-                <List>
-                    <li>Shop</li>
-                </List>
+            <li className='flex w-20 justify-around items-center 
+                list-none cursor-pointer
+                hover:-translate-y-1 hover:scale-110'>
+                        Shop
+                    </li>
             </Link>
             <Link style={navStyle} to='cart'>
-                <List>
+                <div className='flex w-20 justify-around items-center 
+                list-none cursor-pointer
+                hover:-translate-y-1 hover:scale-110'>
                     <li className='Cart-Icon'><BsCartFill/></li>
-                </List>
+                    <div>{cart.length}</div>
+                </div>
             </Link>
-        </Wrapper>
+        </div>
     )
 }
 
 export default Nav
 
-const Wrapper = styled.div`
-display:flex;
-justify-content:space-around;
-align-items:center;
-min-height:10vh;
-background-color:#313131;
-color:white;`
-
-const List = styled.div`
-display:flex;
-width: 5rem;
-justify-content: space-around;
-align-items:center;
-list-style: none;
-cursor: pointer;
-&:hover{
-    transform: translateY(-2px);
-    box-shadow: 0 2px 3px 0 hsl(0 0% 0% / 0.1);; 
-};`
