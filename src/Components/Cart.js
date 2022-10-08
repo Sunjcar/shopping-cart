@@ -7,42 +7,47 @@ const Cart = ({ cart, handleAddProduct, handleRemoveProduct }) => {
     const totalPrice = cart.reduce((price, item) => price + item.quantity * item.price, 0)
 
     return (
-        <div>
-            <CartWrap>
-                <h1>Cart</h1>
+        <div className='h-85.5'>
+            <div className='flex flex-col items-center justify-center
+            p-4'>
+                <h1 className='text-xl font-extrabold'>Cart</h1>
 
                 {cart.length === 0 &&
                     <div className='cart-empty'> Cart is empty </div>
                 }
-            </CartWrap>
+            </div>
             <div>
                 {cart.map((item) => (
-                    <Card>
+                    <div className='flex gap-4 justify-between items-center'>
                         <div key={item.id} className='cart'>
-                            <Wrap>
+                            <div className='flex items-center justify-between w-30'>
                                 <img
-                                    className='cart-items'
+                                    className='flex w-5 h-5 rounded-xl'
                                     src={item.image}
                                     alt={item.name}
                                 />
                                 <p>{item.name}</p>
-                            </Wrap>
-                            <Quantity>
-                                <button className='product-button' onClick={() => handleRemoveProduct(item)}>
+                            </div>
+                            <div className='flex gap-4 w-6'>
+                                <button className='flex items-center justify-center' onClick={() => handleRemoveProduct(item)}>
                                     <AiOutlineMinus />
                                 </button>
                                 <p>{item.quantity}</p>
-                                <button className='product-button' onClick={() => handleAddProduct(item)}>
+                                <button className='flex items-center justify-center' onClick={() => handleAddProduct(item)}>
                                     <AiOutlinePlus />
                                 </button>
-                            </Quantity>
-                            <p className='item-price'>${item.price * item.quantity}</p>
+                            </div>
+                            <p className='w-5'>${item.price * item.quantity}</p>
                         </div>
-                    </Card>
+                    </div>
                 ))}
-                <div className='check-out'>
+                <div className='flex flex-row-reverse pr-40 gap-4'>
                 <h3 className='total-price'>Total: ${totalPrice}</h3>
-                <button> Check Out </button>
+                <button className='flex justify-center items-center
+                w-10 h-1.5 rounded-3xl
+                 bg-black text-white
+                 border-none outline-none
+                 cursor-pointer'> Check Out </button>
                 </div>
             </div>
         </div>
@@ -50,30 +55,3 @@ const Cart = ({ cart, handleAddProduct, handleRemoveProduct }) => {
 }
 
 export default Cart
-
-const Card = styled.div`
-display:flex;
-gap:1rem;
-justify-content: space-between;
-align-items:center;`
-
-const Wrap = styled.div`
-display:flex;
-align-items:center;
-justify-content:space-between;
-width:30rem;
-`
-
-const CartWrap = styled.div`
-display:flex;
-flex-direction:column;
-align-items:center;
-justify-content:center;
-padding:1rem;
-`
-const Quantity = styled.div`
-display:flex;
-gap:1rem;
-width:6rem;
-justify-content:center;
-`
