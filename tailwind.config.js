@@ -15,7 +15,9 @@ module.exports = {
       '30': '30rem',
       '6' : '6rem',
       '5' : '5rem',
-      '10' : '10rem'
+      '10' : '10rem',
+      '80' : '20rem',
+      '64' : '16rem'
     },
     extend: {
       rotate:{
