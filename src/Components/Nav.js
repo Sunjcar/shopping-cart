@@ -30,9 +30,11 @@ function Nav({cart}) {
             </Link>
             <Link style={navStyle} to='cart'>
                 <div className='flex w-20 justify-around items-center 
-                list-none cursor-pointer
+                list-none cursor-pointer gap-4
                 hover:-translate-y-1 hover:scale-110'>
-                    <li className='Cart-Icon'><BsCartFill/></li>
+                    <li className='flex items-center justify-center 
+                    font-bold p-4 rounded-3xl bg-white text-black
+                    '><BsCartFill/></li>
                     <div>{cart.length}</div>
                 </div>
             </Link>

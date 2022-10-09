@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai"
 
 const Cart = ({ cart, handleAddProduct, handleRemoveProduct }) => {
