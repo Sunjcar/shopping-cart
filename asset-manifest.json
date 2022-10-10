@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.b71c1162.css",
-    "main.js": "/shopping-cart/static/js/main.bfa785ee.js",
+    "main.css": "/shopping-cart/static/css/main.18c71ace.css",
+    "main.js": "/shopping-cart/static/js/main.8b93ac6b.js",
     "static/js/787.d6fe38e8.chunk.js": "/shopping-cart/static/js/787.d6fe38e8.chunk.js",
     "static/media/Tea.jpg": "/shopping-cart/static/media/Tea.97937976abd969dab42c.jpg",
     "static/media/Computer.jpg": "/shopping-cart/static/media/Computer.9c43260d8f5cf2b3bb0e.jpg",
@@ -11,12 +11,12 @@
     "static/media/PumaShoes.jpg": "/shopping-cart/static/media/PumaShoes.7ce6efe2244618753b62.jpg",
     "static/media/Watch.jpg": "/shopping-cart/static/media/Watch.cc18585321e1188c02d8.jpg",
     "index.html": "/shopping-cart/index.html",
-    "main.b71c1162.css.map": "/shopping-cart/static/css/main.b71c1162.css.map",
-    "main.bfa785ee.js.map": "/shopping-cart/static/js/main.bfa785ee.js.map",
+    "main.18c71ace.css.map": "/shopping-cart/static/css/main.18c71ace.css.map",
+    "main.8b93ac6b.js.map": "/shopping-cart/static/js/main.8b93ac6b.js.map",
     "787.d6fe38e8.chunk.js.map": "/shopping-cart/static/js/787.d6fe38e8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b71c1162.css",
-    "static/js/main.bfa785ee.js"
+    "static/css/main.18c71ace.css",
+    "static/js/main.8b93ac6b.js"
   ]
 }
