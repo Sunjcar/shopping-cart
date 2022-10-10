@@ -8,9 +8,8 @@ function Home() {
         textDecoration: 'none'
     }
     return (
-        <div className='flex justify-center items-center flex-wrap
-        p-8 gap-20
-        h-90 bg-gradient-to-l from-violet-300'>
+        <div className='flex justify-center items-center flex-wrap flex-1
+        p-8 gap-20 bg-gradient-to-l from-violet-300'>
             <section className='flex flex-col gap-4'>
                 <p className='font-bold tracking-widest uppercase text-gray-400'>
                     The best online store in the world!

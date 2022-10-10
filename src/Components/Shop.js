@@ -4,7 +4,7 @@ function Shop({ productItems, handleAddProduct }) {
 
   return (
     <div className='flex justify-center items-center 
-    gap-8 p-8 flex-wrap'>
+    gap-8 p-8 flex-wrap flex-1'>
       {productItems.map((productItem) => (
         <div key={productItem.id} className='flex flex-col gap-4 
         justify-center items-center'>
