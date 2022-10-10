@@ -45,7 +45,7 @@ const Cart = ({ cart, handleAddProduct, handleRemoveProduct }) => {
                 ))}
             </div>
             <hr className='pb-2 bg-stone-50'></hr>
-            <div className='flex flex-row-reverse relative
+            <div className='flex flex-row-reverse relative items-center
             gap-4 right-16 md:right-20 lg:right-152px'>
                 <h3 className='total-price'>Total: ${totalPrice}</h3>
                 <button className='flex justify-center items-center
